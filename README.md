@@ -7,9 +7,7 @@ Instructions
 ================================
 To download the Templates, follow the following steps:
 
-1. Browse to the "Zip Ball" directory
-2. Click on the zip file (do NOT right-click and click 'Save-as')
-3. Right-click where it says "View Raw" and save the zip file into an appropriate directory
-4. Extract the contents 
+1. Zip the files using the "Zip" download button above (Next to  "Clone in Windows")
+2. Extract the contents 
 
 Enjoy!
