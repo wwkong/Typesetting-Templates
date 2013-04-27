@@ -45,6 +45,18 @@
     linkcolor=black,
     urlcolor=black
 }
+
+% Tweaks
+
+\geometry{letterpaper}
+\addto\captionsenglish{\renewcommand{\contentsname}{Table of Contents}}
+\renewcommand{\arraystretch}{2}
+
+\renewcommand{\cftloftitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+
+\renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -729,15 +741,6 @@ pagenumbering{arabic}
 
 \backslash
 setcounter{page}{1}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-rfoot{
-\backslash
-thepage}
 \end_layout
 
 \end_inset

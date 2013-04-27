@@ -1,0 +1,1265 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+% Necessary Packages
+
+\usepackage{babel} %Allow labeling of TOC
+%\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm} 
+\usepackage{url} 
+\usepackage{enumerate} 
+\usepackage{tikz} 
+\usepackage{setspace}
+\usepackage{tocloft}
+\usepackage{datetime}
+\usepackage{fancyhdr}
+
+% For TOC
+
+\renewcommand{\numberline}[1]{#1   }
+
+% For Bibliography
+
+% Headers
+\cfoot{}
+\rfoot{\thepage}
+
+% Headings
+
+\renewcommand\thesection{\arabic{section}{.0}}
+\renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
+
+% Special Setups
+
+\usepackage{caption}
+\captionsetup{labelfont=bf,indention=0cm}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% Tweaks
+
+\geometry{letterpaper}
+\addto\captionsenglish{\renewcommand{\contentsname}{Table of Contents}}
+\renewcommand{\arraystretch}{2}
+
+\renewcommand{\cftloftitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+
+\renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+fixltx2e
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman charter
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+singlespacing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\noun on
+University of Waterloo
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Faculty of Mathematics
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\size large
+\emph on
+An Analysis of Flexible Risk Reporting Systems 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+TD Bank Financial Group
+\begin_inset Newline linebreak
+\end_inset
+
+Enterprise Risk Management Department
+\begin_inset Newline linebreak
+\end_inset
+
+Toronto, Ontario, Canada
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Prepared by
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\noun on
+Weiwei (William) Kong
+\noun default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+#20372777
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+3A Financial Analysis and Risk Management,
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+Professional Risk Management (PRM) Specialization
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+3A Mathematical Finance
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+monthname
+\backslash
+,
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+the
+\backslash
+year
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+singlespacing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+22 Locust Terrace
+\begin_inset Newline linebreak
+\end_inset
+
+Markham, ON 
+\begin_inset Newline linebreak
+\end_inset
+
+L6E 1P1 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usdate
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+Donna Taylor
+\begin_inset Newline linebreak
+\end_inset
+
+Senior Manager, Enterprise Risk Management Department
+\begin_inset Newline linebreak
+\end_inset
+
+TD Bank Financial Group
+\begin_inset Newline linebreak
+\end_inset
+
+66 Wellington Street West 
+\begin_inset Newline linebreak
+\end_inset
+
+Toronto, ON
+\begin_inset Newline linebreak
+\end_inset
+
+M5K 1A2 
+\end_layout
+
+\begin_layout Standard
+Dear Donna, 
+\end_layout
+
+\begin_layout Standard
+I have prepared the enclosed report, 
+\emph on
+“
+\emph default
+An Analysis on the Importance of Flexible Risk Reporting Systems
+\emph on
+”
+\emph default
+, as my 3A Work Report for the Enterprise Risk Reporting group at TD Bank
+ Financial Group.
+ This report, the third of four work reports that Co-operative Education
+ Program requires that I successfully complete as part of my Co-op BMath
+ degree requirements, has not received previous academic credit.
+\end_layout
+
+\begin_layout Standard
+The risk reporting team that you lead provides verification, execution,
+ and debugging of various risk related reports to be used in order to improve
+ and monitor the accuracy of data in TD's in-house reporting tool, IRIS.
+ My job as an Associate Co-op Student is to analyze and verify risk related
+ reports, provide improvements, and assist other teams on the Enterprise
+ Risk Management floor with their various projects.
+ The primary tools that I use in my analysis include Microsoft Excel, Word,
+ Access, VBA, SQL, and Tableau.
+ This report examines the importance of risk reporting tools in financial
+ institutions and specifically, the need for them to be flexible enough
+ to handle any type of user based need.
+\end_layout
+
+\begin_layout Standard
+The Faculty of Mathematics requests that you evaluate this report for command
+ of topic and technical content/analysis.
+ Following your assessment, the report, together with your evaluation, will
+ be submitted to the Math Undergrad Office for evaluation on campus by qualiﬁed
+ work report markers.
+ The combined marks determine whether the report will receive credit and
+ whether it will be considered for an award.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wrkRpt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I would like to thank you for your assistance in preparing and assessing
+ this document.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sincerely, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename [001839].jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Weiwei (William) Kong
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Encl.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onehalfspacing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+doublespacing
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sectionmark{Executive Summary}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{Excecutive Summary}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Executive Summary
+\end_layout
+
+\begin_layout Standard
+Risk management has seen an immense growth in the past decade, especially
+ with more recent area of enterprise risk management.
+ This increase in growth naturally necessitates a robust reporting system
+ under which risks can be identified, assessed, and mitigated.
+ The purpose of this report is to examine three risk reporting systems:
+\end_layout
+
+\begin_layout Itemize
+IRIS
+\end_layout
+
+\begin_layout Itemize
+Tableau
+\end_layout
+
+\begin_layout Itemize
+COGNOS BIA
+\end_layout
+
+\begin_layout Standard
+An analysis of their various strength and weaknesses will be conducted.
+ Their ability to contribute to the risk reporting process and which areas
+ they excel at will also be examined.
+ The criteria that will be used to judge the various systems include: 
+\end_layout
+
+\begin_layout Itemize
+User friendliness
+\end_layout
+
+\begin_layout Itemize
+Flexibility 
+\end_layout
+
+\begin_layout Itemize
+Maintainability 
+\end_layout
+
+\begin_layout Standard
+It will be shown that IRIS excels at providing detailed information to end
+ users, Tableau is great at rapid-deployment ad-hoc reporting, and COGNOS
+ contains a wide variety of tools that allow for extremely accurate reporting.
+ In conclusion, though, it is by combining the various strengths of these
+ systems together that a truly good risk reporting system can be made, with
+ one system's strengths covering another system's weaknesses.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{fancy}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+headrulewidth}{0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chead{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rhead{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Since the financial crisis of 2007-2008, there has been an increase in the
+ importance of accurate and valid risk management.
+ Credit, operational, and market risk are some of the most regulated areas
+ of risk management, but equally, if not more, important compared to the
+ 3 previous areas is the requirement for sound enterprise risk management
+ principles.
+ To be precise about the definition of enterprise risk, Investopedia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "erm"
+
+\end_inset
+
+ defines enterprise risk management as a 
+\begin_inset Quotes eld
+\end_inset
+
+...
+ management discipline that calls for corporations to identify all the risks
+ they face, to decide which risks to manage actively, and then to make that
+ plan of action available to all stakeholders (not simply shareholders)
+ as part of their annual reports.
+\begin_inset Quotes erd
+\end_inset
+
+ That is, it is an area of risk that that supports the decisions of other
+ risk areas and the corporation as a whole.
+ Part of this responsibility is to ensure that the risk reporting infrastructure
+ surrounding the organization is flexible enough to handle just about any
+ kind of reporting request while being robust enough to operate with minimal
+ errors.
+\end_layout
+
+\begin_layout Standard
+This paper will explore the various risk reporting systems that TD Bank
+ Financial Group is currently using or plans to use and will compare their
+ various benefits and downsides.
+ Specifically, the reporting systems that will be compared are IRIS, Tableau,
+ and COGNOS.
+\end_layout
+
+\begin_layout Section
+Analysis
+\end_layout
+
+\begin_layout Standard
+We first begin by defining our judging criteria and then move on to determining
+ how well each system does according to these criteria.
+ A brief conclusion will be given as to which system is the most suited
+ to flexible risk reporting.
+\end_layout
+
+\begin_layout Subsection
+Defining Criteria
+\end_layout
+
+\begin_layout Standard
+In short, the three most important criteria needed to judge a reporting
+ system's quality are: user friendliness, flexibility for ad-hoc reporting,
+ and ease of maintainability.
+ 
+\end_layout
+
+\begin_layout Standard
+User friendliness is necessary for reporting systems because there is cost
+ associated with training a developer and the time needed to develop a report.
+ If a reporting system or reporting program is easy to learn and intuitive,
+ then the time for both of the previous items will be relatively short compared
+ to other more complicated system which will, in turn, reduce costs.
+\end_layout
+
+\begin_layout Standard
+The need for flexibility in a reporting system is crucial because the financial
+ landscape in which risk management resides is constantly changing.
+ This could be through policy changes like the new Basel III Accord or major
+ financial market moving events such as the recent housing and mortgage
+ crisis.
+ These constant changes are what make risk reporting extremely dynamic in
+ nature.
+\end_layout
+
+\begin_layout Standard
+Finally, is the ease of maintainability which in this context means how
+ difficult is it to implement changes and features in the reporting tool,
+ whether it is through the user itself or through professionals who specifically
+ deal with the reporting system in question.
+ This criterion’s importance follows directly from the previous criterion’s
+ importance.
+\end_layout
+
+\begin_layout Subsection
+IRIS
+\end_layout
+
+\begin_layout Standard
+Using the above, we examine the first of TD's risk reporting system, IRIS,
+ which is the main credit risk reporting tool used by TD today.
+ IRIS is currently maintained by a segment of TD's IT department dedicated
+ to supporting business and end users who use the system.
+ Changes and new features to the system are added through the standard systems
+ development cycle, which on a high level involves 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sysDev"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+Identification and Planning of the Project
+\end_layout
+
+\begin_layout Enumerate
+Analysis of the Requirements
+\end_layout
+
+\begin_layout Enumerate
+Documenting a Design 
+\end_layout
+
+\begin_layout Enumerate
+Development
+\end_layout
+
+\begin_layout Enumerate
+System Integration and Business Acceptance Testing (SIT and BAT environments)
+\end_layout
+
+\begin_layout Enumerate
+Deployment
+\end_layout
+
+\begin_layout Standard
+These cycles vary in length, depending on the changes that are being implemented
+, but typically will take a one to a few months for a cycle to be completed.
+ 
+\end_layout
+
+\begin_layout Standard
+In terms of user friendliness, IRIS does very well in guiding users to which
+ parameters are needed to generate a report through the use of a list based
+ parameter selection menu.
+ The types of reports that can be generated are also well labeled and provide
+ a good summary of the end user information that is needed for traders and
+ financial analysts.
+ 
+\end_layout
+
+\begin_layout Standard
+However, IRIS is not a very flexible system because the level of detail
+ is dependent on what parameters are available for users to input and also
+ because of the lack of transparency of how IRIS picks up its data from
+ upstream, how it aggregates it, and how it displays what business logic
+ is involved.
+ 
+\end_layout
+
+\begin_layout Standard
+Maintainability of the system is costly because it was developed in-house
+ and without dedicated external support.
+ The long project development cycles also present a costly overhead to maintaini
+ng and improving the system.
+\end_layout
+
+\begin_layout Standard
+Overall, though, IRIS is still a solid reporting system that does well in
+ providing information to specific groups of end users, but it would not
+ fare too well as an ad-hoc reporting tool.
+\end_layout
+
+\begin_layout Subsection
+Tableau 
+\end_layout
+
+\begin_layout Standard
+Tableau is a business intelligence tool developed as a rapid-deployment
+ data visualization system.
+ While it was not specifically developed to generate reports, the tool is
+ robust enough to develop a solid risk reporting system.
+ Of its main features, it includes the ability to create ODBC connection
+ to several dozen different data sources including Microsoft SQL, IBM data
+ repositories, and MS Access.
+ Another useful feature is the ability to generate custom SQL connections
+ that retrieve data from external sources to be parsed in Tableau.
+ 
+\end_layout
+
+\begin_layout Standard
+Looking at Tableau through a user friendliness perspective, Tableau interface
+ is extremely intuitive and well built, using a drag-and-drop approach to
+ add new columns or features to a report and dashboard.
+ Tableau also excels at data processing through the use of automatically
+ generated table links every time a user wants to connect one table to another.
+ Dashboards are easily customizable and the end user can interact with them
+ live through buttons and scripts created by the developers of the report.
+ 
+\end_layout
+
+\begin_layout Standard
+Flexibility of the tool is also very high because Tableau comes equipped
+ with its own intuitive programming language that closely mimics MS Access.
+ It does, however, have some limitations with data retrieval.
+ For example, data that is joined in Tableau can only be done with left
+ joins when placing data from two repositories in the same report or dashboard,
+ where the user must decide which table is the main table (on the left side)
+ and which table is the secondary table (on the right side).
+ Another slightly more important restriction is that Tableau always wraps
+ any user's custom query into a subquery before executing it.
+ Depending on what SQL engine that an organization is using, this may limit
+ what SQL operations, like Microsoft SQL's SET and GET actions used to control
+ ETL, are available through Tableau's custom SQL parser.
+ 
+\end_layout
+
+\begin_layout Standard
+In terms of maintainability, Tableau's interface and development tools are
+ specifically tailored to end business users and do not require complex
+ technical knowledge to maintain, other than the maintenance involved with
+ Tableau Server.
+ The ability to add and remove features as well as complete transparency
+ to how values and measures created makes Tableau very ideal and cheap for
+ maintenance.
+ Since business users can develop their reports in Tableau, the development
+ cycle for an ad-hoc report would be relatively short.
+\end_layout
+
+\begin_layout Standard
+Despite its shortcomings in data retrieval, Tableau is the ideal tool for
+ rapid development of risk reports, ad-hoc or static, on the business side.
+ The additional features of data visualization only add to the benefits
+ described above.
+\end_layout
+
+\begin_layout Subsection
+COGNOS
+\end_layout
+
+\begin_layout Standard
+IBM COGNOS or COGNOS BIA is a business intelligence tool developed by IBM
+ for creating near perfect, high accuracy reports for business end users.
+ This system, in particular, is known for its large suite of statistical
+ tools and large market share in business intelligence tools.
+ COGNOS' main method of interaction is as an online web application with
+ Windows File Explorer like navigation.
+ 
+\end_layout
+
+\begin_layout Standard
+From a user friendliness perspective, COGNOS is intuitive enough to be used
+ practically and functionally.
+ However, it does suffer from a larger learning curve when compared to IRIS
+ and Tableau when it comes to understanding how the various tools work and
+ understanding which tools are appropriate in which situation.
+ 
+\end_layout
+
+\begin_layout Standard
+Looking at flexibility, COGNOS provides a large array of features such as
+ advanced statistical analysis and query optimization tools, customizable
+ user interfaces and dashboards, as well as some data visualization tools.
+ This makes COGNOS the most flexible in its usage when compared to the other
+ tools, but at a cost of more time needed to learn and effectively apply
+ the tools.
+\end_layout
+
+\begin_layout Standard
+In terms of maintainability, COGNOS has a very large tool set for server
+ and software maintenance that requires some knowledge of load balancing
+ and data management in order to effectively use the tool - if the user
+ does not wish to use a direct connection to a pre-aggregated data source.
+ It is fairly robust and comparable to Tableau in its tool set but the main
+ differential being that Tableau is far more transparent in how data flows
+ into and out of the system.
+\end_layout
+
+\begin_layout Standard
+In summary, COGNOS, out of the three, is the most powerful and flexible
+ of the tools in terms of what is provided but can be a bit difficult to
+ learn due to its complexity.
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+All three systems provide some benefit to risk reporting but are very specialize
+d in their benefits.
+ IRIS is a very simple end user reporting tool that provides detailed informatio
+n to a specific group of end users very effectively.
+ Tableau is a business user tailored tool that is used for rapid deployment
+ ad-hoc reporting and is excellent when it comes to transparency.
+ COGNOS is an industrial grade reporting tool that produces high quality
+ reports and comes equipped with a large suite of additional features at
+ the expense of a steeper learning curve compared to the other two tools.
+\end_layout
+
+\begin_layout Standard
+Ultimately, it would be recommended that IRIS be used for end users who
+ do not wish to partake in any report development, Tableau to be used for
+ rapid-deployment ad-hoc reports, and COGNOS used for automated policy mandated
+ reports that require a high level of detail.
+ Hence it is recommended that for a risk reporting system to be truly effective,
+ it should take advantage of the various industry tools available to utilize
+ their strengths as well as cover any weaknesses created by using only one
+ system.
+ However, on a practical and business level, some effort must be made about
+ considering the costs associated with each system.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+singlespacing
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{References}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "wrkrpt"
+options "IEEEtran"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
