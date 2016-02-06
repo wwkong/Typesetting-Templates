@@ -1,56 +1,25 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
 \begin_preamble
-% Necessary Packages
-
-\usepackage{babel} %Allow labeling of TOC
-\usepackage{fancyhdr}
-\usepackage{cmbright}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath,amssymb,amsthm} 
-\usepackage{url} 
-\usepackage{enumerate} 
-\usepackage{tikz} 
-\pagestyle{fancy}
-
-% For Bibliography
-
-\usepackage{apacite} % Order here is important!
-\usepackage{natbib}
-
-
-% Headers
-
-\chead{[XXXX][\#\#\#] Course Notes}
-\lhead{[Season] 20[XX]}
-
-% Special Setups
-
-\usepackage{caption}
-\captionsetup{labelfont=bf,indention=0cm}
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks,
-    citecolor=blue,
-    filecolor=blue,
-    linkcolor=blue,
-    urlcolor=purple
-}
-
-% Tweaks
-
-\geometry{letterpaper}
-\renewcommand{\ps@plain}{\pagestyle{fancy}}
-\addto\captionsenglish{\renewcommand{\contentsname}{Table of Contents}}
+% variables for template
+\newcommand*{\varCourse}{CODE101}
+\newcommand*{\varCourseTitle}{Title of course}
+\newcommand*{\varWebsite}{http://optional.example.com/url}
+\newcommand*{\varUniversity}{University of YYZ}
+\newcommand*{\varInstructor}{Instructor's name}
+\newcommand*{\varLatexer}{I. B. Texin}
+\newcommand*{\varSemester}{Season 20XX}
 \end_preamble
 \use_default_options true
 \begin_modules
-theorems-ams
+customHeadersFooters
+logicalmkup
 eqs-within-sections
 figs-within-sections
+theorems-ams
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -60,13 +29,13 @@ figs-within-sections
 \font_roman default
 \font_sans cmss
 \font_typewriter default
+\font_math auto
 \font_default_family sfdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format pdf2
 \output_sync 0
@@ -75,18 +44,36 @@ figs-within-sections
 \float_placement h
 \paperfontsize default
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
-\cite_engine natbib_authoryear
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -103,7 +90,7 @@ figs-within-sections
 \quotes_language english
 \papercolumns 1
 \papersides 1
-\paperpagestyle default
+\paperpagestyle fancy
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -113,7 +100,47 @@ figs-within-sections
 
 \begin_body
 
+\begin_layout Left Header
+
+\lang french
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+varSemester
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Center Header
+
+\lang french
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+varCourse
+\backslash
+ Course Notes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+
+\lang french
 \begin_inset ERT
 status open
 
@@ -124,6 +151,18 @@ status open
 pagenumbering{roman}
 \end_layout
 
+\begin_layout Plain Layout
+
+%see Document->Settings->LaTeX Preamble for definition of variables
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} % supress fancy header on first page
+\end_layout
+
 \end_inset
 
 
@@ -132,20 +171,58 @@ pagenumbering{roman}
 \begin_layout Standard
 
 \series bold
-[Season] 20[XX] offering of
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+varSemester
+\backslash
+
+\end_layout
+
+\end_inset
+
+ offering of
 \end_layout
 
 \begin_layout Standard
 
 \series bold
 \size giant
-[Course]
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+varCourse
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 
 \series bold
-[Name of Course]
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+varCourseTitle
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
@@ -153,12 +230,36 @@ pagenumbering{roman}
 \end_layout
 
 \begin_layout Standard
-[Name of Professor]
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+varInstructor
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-University of [Name]
+
 \series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+varUniversity
+\end_layout
+
+\end_inset
+
 
 \begin_inset Newline newline
 \end_inset
@@ -181,19 +282,33 @@ LaTeX
 
  er: 
 \noun on
-[First initial].
- [Last name] 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+varLatexer
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
 
 \noun on
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-Optional Website
+
+\backslash
+varWebsite
 \end_layout
 
 \end_inset
@@ -365,7 +480,20 @@ sectionmark{Abstract}
 \end_layout
 
 \begin_layout Abstract
-The purpose of these notes is to provide a guide to [course name].
+The purpose of these notes is to provide a guide to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+varCourseTitle
+\end_layout
+
+\end_inset
+
+.
  The contents of this course include [contents].
  The recommended prerequisite is [prerequisite] and readers should have
  a basic understanding of [subject matter].
@@ -725,7 +853,7 @@ how to edit
 LatexCommand bibtex
 btprint "btPrintAll"
 bibfiles "ss_resources"
-options "apacann"
+options "authordate1"
 
 \end_inset
 
@@ -862,7 +990,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 This is a school of fish.
