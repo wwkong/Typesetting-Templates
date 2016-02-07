@@ -102,7 +102,6 @@ theorems-ams
 
 \begin_layout Left Header
 
-\lang french
 \begin_inset ERT
 status open
 
@@ -120,7 +119,6 @@ varSemester
 
 \begin_layout Center Header
 
-\lang french
 \begin_inset ERT
 status open
 
@@ -140,7 +138,6 @@ varCourse
 
 \begin_layout Standard
 
-\lang french
 \begin_inset ERT
 status open
 
